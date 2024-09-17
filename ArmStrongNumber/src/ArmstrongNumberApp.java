@@ -4,15 +4,17 @@ public class ArmstrongNumberApp {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		System.out.println("enter a number ");
+//		For a 4 digit number, every digit would be raised to their fourth power
+//		to get the desired result. 1634,153
+		System.out.println("Enter a Number ");
 		int n = scan.nextInt();
 		ArmStrongNumber armStrongNumber= new ArmStrongNumber();
 		int res=armStrongNumber.armStrongChecker(n);
 		if (res==n) {
-			System.out.println("The number "+n+" is armstrong number");
+			System.out.println("The Number "+n+" is Armstrong Number");
 		}
 		else  {
-			System.out.println("The number "+n+" is  not armstrong number");
+			System.out.println("The Number "+n+" is  Not Armstrong Number");
 		}
 
 	}
